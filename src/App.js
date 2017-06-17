@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Addition from'./component/Addition';
+import Soustraction from './component/Soustraction'
 
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <Addition/>
+        <Soustraction/>
       </div>  
     )
   }

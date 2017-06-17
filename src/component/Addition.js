@@ -14,12 +14,12 @@ export default class Addition extends Component{
 	}
 
 	_object_ToArray(){
-		this.setState.addition= Object.keys(this.state.addition).map((key) => parseFloat(this.state.addition[key]));
+		this.state.addition= Object.keys(this.state.addition).map((key) => parseFloat(this.state.addition[key]));
 	}
 
 	_addition(){
-		this.setState({
-			result:this.setState.addition.reduce((a,b)=>a+b)
+		this.setState ({
+			result:this.state.addition.reduce((a,b)=>a+b)
 		})
 	}
 
@@ -31,7 +31,7 @@ export default class Addition extends Component{
 	_getInputValue(e){
 		let state=this.state.addition;
 		state[e.target.name]= e.target.value;
-		this.setState({
+		this.setState ({
 			addition:state
 		})
 	}
@@ -50,7 +50,7 @@ export default class Addition extends Component{
 						type='number'
 						action={this._getInputValue}
 						/>
-						<span className='addition centered-text'> + </span>
+						<span className='addition'> + </span>
 						<Input
 						name='right_number'
 						type='number'
