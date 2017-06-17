@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Addition from'./component/Addition';
 import Soustraction from './component/Soustraction'
 import Multiplication from'./component/Multiplication';
+import Division from'./component/Division';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <Addition/>
         <Soustraction/>
         <Multiplication/>
+        <Division/>
       </div>  
     )
   }
