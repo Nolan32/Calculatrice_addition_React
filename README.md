@@ -2,5 +2,8 @@
 decouverte_react
 
 
-#version 1
+# version 1
 ajout -fonctionnalité addition
+
+# version 2
+ajout -fonctionnalité soustraction +debug addition
