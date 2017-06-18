@@ -39,12 +39,10 @@ export default class Addition extends Component{
 	render(){
 		return(
 			<div>
-				<div className='ui four column centered grid'>
-					<div className='column'>
-						<h2 className='centered-text'>Calculatrice</h2>
-						<span className='content-result  centered-text'>Resultat:
-						<span className='result'> {this.state.result}</span></span>
-						
+				<h1 className='centered-text'>Calculatrice</h1>
+				<h2 className='centered-text'>Addition</h2>
+				<span className='content-result  centered-text'>Resultat:
+					<span className='result'> {this.state.result}</span></span>
 						<Input
 						name='left_number'
 						type='number'
@@ -57,8 +55,6 @@ export default class Addition extends Component{
 						action={this._getInputValue}
 						/>
 						<Button action={this._getResult}/>
-					</div>
-				</div>
 			</div>			
 		)
 	}

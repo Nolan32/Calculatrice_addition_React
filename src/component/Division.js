@@ -4,7 +4,7 @@ import Button from './Button';
 
 export default class Division extends Component{
 	constructor(){
-		super()
+		super();
 		this.state={
 			division:{left_number : 0, right_number : 0},
 			result:0
@@ -24,6 +24,10 @@ export default class Division extends Component{
 	_getResult(){
 		this._object_ToArray.call(this);
 		this._division.call(this);
+//		this.setState({
+//			division:{left_number : 0,right_number:0},
+//			result:0
+//		})
 	}
 	_getInputValue(e){
 		let state=this.state.division;
